@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+html2text
+selenium
+webdriver-manager
+selenium-stealth
+pyperclip

@@ -1,8 +1,8 @@
-# site_scrapper_private
+# site_scrapper_public
 
 step 1: input the link into inputsite.txt
 
-step 2: run: 
+step 2: install python packages and requirements: 
 
 ```bash
 python3 -m venv venv
@@ -10,15 +10,27 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-only when you know what to remove for each files
+step 3 run the chain fetcher to fetch content from the site: 
+
 ```bash 
 python chain_fetcher.py
 
-python remove_specific_lines.py
-python remove_specific_lines.py
-python remove_specific_lines.py
+```
 
+step 4 remove repeatative lines: 
+
+only when you know what to remove for each files, put those 
+```bash
+
+python remove_specific_lines.py
+python remove_specific_lines.py
+python remove_specific_lines.py
+```
+
+step 5 strip all other links and combine all the fetched content into one file
+
+```bash
 python strip_links_keep_firstline.py
 
 python format_whitespace.py
-```# site_scrapper_public
+```
