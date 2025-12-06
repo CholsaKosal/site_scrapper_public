@@ -19,13 +19,13 @@ python chain_fetcher.py
 
 step 4 remove repeatative lines: 
 
-only when you know what to remove for each files, put those 
-```bash
+You need know what to remove for each files. Put those lines into remove_lines.txt
+then run: 
 
-python remove_specific_lines.py
-python remove_specific_lines.py
+```bash
 python remove_specific_lines.py
 ```
+you might need to do this a few times
 
 step 5 strip all other links and combine all the fetched content into one file
 
